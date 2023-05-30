@@ -1,13 +1,14 @@
 import React from "react";
 
+import App from "../Layouts/App";
+
 export default function Home({ user, app_name }) {
     return (
-        <div>
-            <h1>{app_name}</h1>
+        <App title="Home">
             <p>
                 My name is {user.name} you can follow me on twitter: @
                 {user.username}
             </p>
-        </div>
+        </App>
     );
 }
