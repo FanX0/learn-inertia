@@ -1,16 +1,15 @@
 import React from "react";
-
 import Guest from "../../Layouts/Guest";
 import { Link } from "@inertiajs/inertia-react";
 
-export default function Login() {
+export default function Register() {
     return (
-        <Guest title="Login">
+        <Guest title="Register">
             <div className="card">
-                <div className="card-header">Login</div>
-                <div className="card-body">Login form</div>
+                <div className="card-header">Register</div>
+                <div className="card-body">Register form</div>
                 <div className="card-footer">
-                    <Link href="/register">Register</Link>
+                    <Link href="/login">Login</Link>
                 </div>
             </div>
         </Guest>
