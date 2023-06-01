@@ -4,7 +4,7 @@ import App from "../Layouts/App";
 
 export default function Home({ user, app_name }) {
     return (
-        <App title="Home">
+        <>
             <p>
                 <div className="container">
                     <div className="card">
@@ -17,6 +17,8 @@ export default function Home({ user, app_name }) {
                     </div>
                 </div>
             </p>
-        </App>
+        </>
     );
 }
+
+Home.layout = (page) => <App children={page} title="Home" />;
